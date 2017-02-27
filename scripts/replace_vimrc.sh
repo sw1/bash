@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 DOT=~/bash/dot_files
 DOT_OLD=~/.old_dot_files
