@@ -1,3 +1,7 @@
+export TERM="screen-256color"
+alias tmux="tmux -2"
+export tmv=$(tmux -V)
+
 export PETSC_ARCH=linux-gnu
 export PETSC_DIR=/data/sw1/software/petsc-3.5.3
 export PYTHONPATH=/bin/pythonscripts:
