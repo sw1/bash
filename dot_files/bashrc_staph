@@ -1,3 +1,4 @@
+# for tmux + vim colors
 export TERM="screen-256color"
 alias tmux="tmux -2"
 export tmv=$(tmux -V)
