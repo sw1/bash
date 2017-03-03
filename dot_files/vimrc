@@ -1,13 +1,17 @@
 " General Settings
 
+let hostname = substitute(system('hostname'),'\n','','')
+
 filetype on
 filetype indent on
 
 if $tmv != "tmux 1.8"
-    set t_Co=256
-    let g:solarized_termcolors=256
-    colorscheme solarized
-    set background=dark
+    if hostname != 'proteusi01' && hostname != 'proteusa01'
+        set t_Co=256
+        let g:solarized_termcolors=256
+        colorscheme solarized
+        set background=dark
+    endif
 endif
 
 set dict=/usr/share/dict/words
