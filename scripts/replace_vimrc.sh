@@ -5,6 +5,9 @@ DOT=~/bash/dot_files
 DOT_OLD=~/.old_dot_files
 
 mkdir -p $DOT_OLD
+mkdir -p ~/.vim/.backup
+mkdir -p ~/.vim/.swp
+mkdir -p ~/.vim/.undo
 
 for file in $FILES
 do

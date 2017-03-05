@@ -5,6 +5,8 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+export S=/scratch/sw424
+
 export TERM="screen-256color"
 alias tmux="tmux -2"
 
@@ -17,4 +19,4 @@ fi
 
 # User specific aliases and functions
 umask 0002
-export PATH=/home/sw424/tools/quikr/src/c/:/home/sw424/tools/sratoolkit/bin/:/home/sw424/.local/bin/:/home/sw424/tools/metaphlan2:/home/sw424/tools/metaphlan2/utils:$PATH
+export PATH=/home/sw424/tools/diamond/:/home/sw424/tools/quikr/src/c/:/home/sw424/tools/sratoolkit/bin/:/home/sw424/.local/bin/:/home/sw424/tools/metaphlan2:/home/sw424/tools/metaphlan2/utils:$PATH

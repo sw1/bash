@@ -6,13 +6,17 @@ filetype on
 filetype indent on
 
 if $tmv != "tmux 1.8"
-    if hostname != 'proteusi01' && hostname != 'proteusa01'
+    if hostname != "proteusi01" && hostname != "proteusa01"
         set t_Co=256
         let g:solarized_termcolors=256
         colorscheme solarized
         set background=dark
     endif
 endif
+
+set undodir=~/.vim/.undo//
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swp//
 
 set dict=/usr/share/dict/words
 set cursorline
@@ -72,3 +76,15 @@ no <right> <Nop>
 no <up> ddkP
 
 imap ;; <Esc>
+
+nnoremap Q <Nop>
+
+nmap ZZ :wq!<cr>
+imap ZZ <Nop>
+vmap ZZ <Nop>
+nmap QQ :qa!<cr>
+imap QQ <Nop>
+vmap QQ <Nop>
+nmap WW :w<cr>
+imap WW <Nop>
+vmap WW <Nop>
