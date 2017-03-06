@@ -1,17 +1,16 @@
 " General Settings
 
 let hostname = substitute(system('hostname'),'\n','','')
+let tmv = substitute(system('tmux -V'),'\n','','')
 
 filetype on
 filetype indent on
 
-if $tmv != "tmux 1.8"
-    if hostname != "proteusi01" && hostname != "proteusa01"
+if hostname != "proteusi01" && hostname != "proteusa01" && hostname != "staph"
         set t_Co=256
         let g:solarized_termcolors=256
         colorscheme solarized
         set background=dark
-    endif
 endif
 
 set undodir=~/.vim/.undo//
